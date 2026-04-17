@@ -1,12 +1,8 @@
 import React from "react";
-import { ShoppingCart } from "lucide-react";
+import Home from "./pages/Home";
 
 function App() {
-  return (
-    <div>
-      <ShoppingCart />
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
