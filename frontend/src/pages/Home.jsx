@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 
 function Home() {
   return (
-    <section className="py-5 px-20">
+    <section className="py-5 lg:px-20 px-5 ">
       <NavBar />
       <Hero />
     </section>

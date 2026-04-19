@@ -4,25 +4,29 @@ function Hero() {
   return (
     <section
       style={{ backgroundImage: `url(${hero_bg})` }}
-      className="bg-cover bg-center bg-no-repeat h-[80vh] mt-10 text-white rounded-[30px] flex justify-center items-center relative"
+      className="bg-cover bg-top lg:bg-center bg-no-repeat h-[85vh] lg:h-[80vh] my-0 lg:my-10 text-white rounded-none lg:rounded-[30px] flex justify-start lg:justify-center items-end lg:items-center relative pb-10 lg:pb-0"
     >
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/40 rounded-[30px]"></div>
+      <div className="absolute inset-0 bg-black/50 lg:bg-black/40 rounded-none lg:rounded-[30px]"></div>
 
-      <div className="w-2/4 text-center relative z-10">
-        <h1 className="text-[72px] font-black leading-22 mb-5">
-          Freshly Baked <span className="text-[#D46211]">Happiness</span> Every
-          Day
+      <div className="w-full lg:w-2/4 px-6 lg:px-0 text-left lg:text-center relative z-10">
+        <div className="inline-block lg:hidden bg-white/10 backdrop-blur-sm text-[#D46211] text-[11px] font-bold px-3 py-1.5 rounded-[10px] mb-4 tracking-widest border border-white/10 uppercase">
+          Since 1994
+        </div>
+        <h1 className="text-5xl lg:text-[72px] font-black leading-tight lg:leading-22 mb-4 lg:mb-5 tracking-tight">
+          Freshly Baked <br className="lg:hidden" />{" "}
+          <span className="text-white lg:text-[#D46211]">Happiness</span>
+          <span className="hidden lg:inline"> Every Day</span>
         </h1>
-        <p>
+        <p className="text-gray-200 lg:text-white text-[15px] lg:text-base mb-6 lg:mb-0 w-[95%] lg:w-full leading-relaxed">
           Indulge in the finest handcrafted pastries and artisan breads, made
           with traditional recipes and a dash of local love.
         </p>
-        <div className="mt-5 flex justify-center items-center gap-10">
-          <button className="bg-[#D46211] py-2.5 px-7 cursor-pointer rounded-2xl font-bold">
+        <div className="mt-2 lg:mt-5 flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-10">
+          <button className="bg-[#D46211] w-full lg:w-auto py-3.5 lg:py-2.5 px-7 cursor-pointer rounded-xl font-bold text-lg lg:text-base shadow-lg shadow-[#D46211]/20">
             Shop Now
           </button>
-          <button className="bg-white/10 backdrop-blur-md py-2.5 px-7 cursor-pointer rounded-2xl font-bold">
+          <button className="hidden lg:block bg-white/10 backdrop-blur-md py-2.5 px-7 cursor-pointer rounded-2xl font-bold">
             View Menu
           </button>
         </div>
